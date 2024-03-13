@@ -1,0 +1,171 @@
+/*inicio css del body*/
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(250, 250, 0);
+    padding: 10px;
+
+}
+h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px;
+  }
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+h3{    
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+
+img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+/*fin css del body*/
+
+/*inicio css menu superior*/
+ul.menu li{
+    display: inline;
+    padding-right: 0.5em;    
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    color: white;     
+}
+
+ul.menu li:hover{
+    background-color:rgba(0, 0, 0, 0.9);
+    font-size:medium;
+}
+
+.linkMenu:link, .linkMenu:visited, .linkMenu:active{
+    text-decoration:none;
+    color: white;
+}
+/*final css menu superior*/
+
+#aboutMe{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+#imgPerfil{
+    width: 35%;
+    padding: 10px;
+    border-radius:100%;
+  }
+
+#imgPerfil:hover{
+    transform: rotate(720deg);
+    transition: 2s;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;    
+    margin-top: 20px;
+    border-radius: 7px;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media only screen and (max-width: 560px){
+    .container{        
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }    
+        
+    
+}
+
+.cards{
+    border: 1px;
+    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;    
+}
+
+.cards:hover{
+    background-color:rgb(250, 250, 0);
+    transition: 1.2s;
+}
+
+/*inicio css formulario*/
+.formClass{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 5%;
+    border-radius: 7px;
+}
+
+input, textarea, button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+/*fin css formulario*/
+
+/*inicio css footer*/
+
+@keyframes latidos {
+    from {        
+        transform: scale(0.8);               
+    }
+    to {        
+        transform: scale(0.9);         
+    }
+}
+
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    
+    
+}
+
+#heart{
+    display: inline-block;	
+	animation: latidos 1.5s infinite;    
+	transform-origin: center; 
+}
+/*fin css footer*/

@@ -1,102 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="./styles/reset.css">
-    <link rel="stylesheet" src="./styles/styles.css">
+    <meta charset='utf-8'>    
     <title>Presentación Personal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='./styles/reset.css'>
+    <link rel='stylesheet' href='./styles/styles.css'>
+   <!-- <script src='main.js'></script> -->
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li>Sobre Mi</li>
-                <li>Mis Tecnologías Favoritas</li>
+            <ul class="menu">
+                <li><a href="#section1" class="linkMenu">Sobre Mi</a></li>
+                <li><a href="#section2" class="linkMenu">Mis Tecnologías</a></li>
+                <li><a href="#section3" class="linkMenu">Mis actividades</a></li>
             </ul>
         </nav>
-        <h1>¿Quién es Mario Lopez?</h1>
+        <h1>¿Quién Es Mario Lopez?</h1>
     </header>
-    <main>
-        <section>
-            <header>
-                <h2>Sobre Mi</h2>
-            </header>
-            Mi nombre es mario lopez y actualmente vivo en una pequeña ciudad del caribe colombiano llamada santa marta, me apasiona la tecnología y aprender nuevas formas de utilizarla, soy miembro de una hermosa familia de dos hijos y una esposa maravillosa, tengo algo de experiencia laboral en el área de soporte técnico a equipos de cómputo pero este es mi primer acercamiento serio al mundo de la programación 😎.    <section>
-                <header>
-                    <h2>Mis Tecnologías Favoritas</h2>
-                </header>   
-                <article>
-                    <header>
-                        <h3>HTML</h3>
-                    </header>
-                    <img src="./assets/img/html.svg" alt="logo HTML"/>
-                    <p>
-                        HTML es un lenguaje de marcado para estructurar y presentar contenido en la web.
-                    </p>  
-                </article>
-                <article>
-                    <header>
-                        <h3>CSS</h3>
-                    </header>
-                    <img src="./assets/img/css.svg" alt="logo CSS"/>
-                    <p>
-                        CSS es un lenguaje de hojas de estilo para diseñar y mejorar la apariencia de páginas web.
-                    </p>  
-                </article>
-                <article>
-                    <header>
-                        <h3>JavaScript</h3>
-                    </header>
-                    <img src="./assets/img/javascript.svg" alt="logo JavaScript"/>
-                    <p>
-                        JavaScript es un lenguaje de programación interpretado para hacer páginas web interactivas.
-                    </p>  
-                </article>
-                <article>
-                    <header>
-                        <h3>Docker</h3>
-                    </header>
-                    <img src="./assets/img/docker.svg" alt="logo Docker.">
-                    <p>
-                        Docker es una plataforma que permite desarrollar, ejecutar y compartir aplicaciones en contenedores, facilitando su despliegue y escalabilidad.
-                    </p>  
-                </article>
-            </section>
+    <main>   
+            <a name="section1"></a>               
+            <article id= "aboutMe">   
+                <img id="imgPerfil" src="./assets/img/mr_x.jpg" alt="foto de perfil">
+                <div id="contendAbout">
+                    <h2>Sobre Mi</h2>                                        
+                    <p>Hola mi nombre es Mario Lopez y actualmente vivo en una pequeña ciudad del caribe colombiano llamada santa marta, me apasiona la tecnología y aprender nuevas formas de utilizarla, soy miembro de una hermosa familia con dos hijos y una esposa maravillosa, tengo algo de experiencia laboral en el área de soporte técnico a equipos de cómputo pero este es mi primer acercamiento serio al mundo de la programación 😎.</p>
+                </div>                
+            </article>
+            <a name="section2"></a>              
             <section>
-                <form action="">
-                    <fieldset>
-                        <legend><h2>Mis Actividades Favoritas</h2></legend>
-                        <label>Titulo:
-                            <input type="text" name="titulo" placeholder="escribe el titulo">
-                        </label>
-                        <label >Descripcion:
-                        <textarea 
-                        name="descripcion"
-                        cols="30"
-                        rows="5"
-                        placeholder="escribe una Descripción"
-                        ></textarea>
-                        </label>
-                        <label>Url De Imagen:
-                            <input type="url" name="urlimg" placeholder="escribe la direccion URL de la imagen de la actividad.">
-                        </label>
-                    </fieldset>
-                    <button type="submit">agregar actividad</button>
+            <h2>Mis Tecnologías Favoritas</h2>
+            <div class="container">
+                <article class="cards">
+                    <h3>HTML</h3>
+                    <img src="./assets/img/html.svg" alt="logo HTML">
+                    <p>HTML es un lenguaje de marcado para estructurar y presentar contenido en la web.</p>
+                </article>
+                <article class="cards">
+                    <h3>CSS</h3>
+                    <img src="./assets/img/css.svg" alt="logo CSS">
+                    <p>CSS es un lenguaje de hojas de estilo para diseñar y mejorar la apariencia de páginas web.</p>
+                </article>
+                <article class="cards">
+                    <h3>JavaScript</h3>
+                    <img src="./assets/img/javascript.svg" alt="logo JavaScript">
+                    <p>JavaScript es un lenguaje de programación interpretado para hacer páginas web interactivas.</p>
+                </article>
+                <article class="cards">
+                    <h3>Docker</h3>
+                    <img src="./assets/img/docker.svg" alt="logo Docker">
+                    <p>Docker es una plataforma que permite desarrollar, ejecutar y compartir aplicaciones en contenedores, facilitando su despliegue y escalabilidad.</p>
+                </article>
+            </div>
+        </section>
+        <a name="section3"></a>
+        <section>            
+            <div>
+                <form action="" class="formClass">
+                    <h2>Mis Actividades Favoritas</h2>
+                    <input type="text" name="titulo" placeholder="Escribe el nombre de la actividad">
+                    <textarea name="descripcion" placeholder="Escribe una Descripción" ></textarea>
+                    <input type="url" name="urlimg" placeholder="Escribe la direccion URL de la imagen de la actividad.">
+                    <button type="submit">Agregar actividad 🚀</button>
                 </form>
-            </section>
-            <section>
-                <article>
-                    <p>
-                        <h2>Esta es una actividad.</h2>
-                        esta es una actividad.
-                    </p>
+            </div>
+            <h2>Actividades Agregadas</h2>
+            <div>
+                <article class="cards">
+                    <h3>Ejemplo Actividad</h3>
+                    <img src="./assets/img/dummy-image-square.jpg" alt="logo HTML">
+                    <p>Ejemplo breve escripcion de la actividad</p>
                 </article>
-            </section>
-            
-        </main>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Hecho con el ❤️ usando HTML y CSS.</p>
-    </footer>
+        <p>Hecho con el</p><p id= "heart">❤️</p><p>usando HTML y CSS.</p> 
+    </footer>  
+    <script src="./scripts/index.js"></script>  
 </body>
 </html>
