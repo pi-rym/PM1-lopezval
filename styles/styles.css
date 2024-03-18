@@ -169,3 +169,47 @@ footer{
 	transform-origin: center; 
 }
 /*fin css footer*/
+
+/* estilos cards atividades */
+#contaner_activities{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;    
+    margin-top: 20px;
+    border-radius: 7px;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+.cardDiv{
+    border: 1px;
+    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;    
+}
+.cardTitle{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+.cardDescription{
+    font-family: sans-serif;
+    background-color: rgb(250, 250, 0);
+    padding: 10px;
+    border-radius: 7px;    
+}
+.cardImg{
+    padding: 10px;
+    border-radius: 15px;
+}
+/*fin estilos cards atividades*/

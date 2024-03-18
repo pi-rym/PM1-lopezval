@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='./styles/reset.css'>
     <link rel='stylesheet' href='./styles/styles.css'>
-   <!-- <script src='main.js'></script> -->
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/ico" href="./assets/icons/favicon.ico" />
 </head>
 <body>
     <header>
@@ -59,19 +59,19 @@
             <div>
                 <form action="" class="formClass">
                     <h2>Mis Actividades Favoritas</h2>
-                    <input type="text" name="titulo" placeholder="Escribe el nombre de la actividad">
-                    <textarea name="descripcion" placeholder="Escribe una Descripción" ></textarea>
-                    <input type="url" name="urlimg" placeholder="Escribe la direccion URL de la imagen de la actividad.">
-                    <button type="submit">Agregar actividad 🚀</button>
+                    <input id="titulo" type="text" name="titulo" placeholder="Escribe el nombre de la actividad" >
+                    <textarea id="descripcion" name="descripcion" placeholder="Escribe una Descripción"></textarea>
+                    <input id="urlimg" type="url" name="urlimg" placeholder="Escribe la direccion URL de la imagen de la actividad.">
+                    <button id="botonActividad" type="submit">Agregar actividad 🚀</button>
                 </form>
             </div>
             <h2>Actividades Agregadas</h2>
-            <div>
-                <article class="cards">
+            <div id= "contaner_activities" >
+                <!--<article class="cards">
                     <h3>Ejemplo Actividad</h3>
                     <img src="./assets/img/dummy-image-square.jpg" alt="logo HTML">
                     <p>Ejemplo breve escripcion de la actividad</p>
-                </article>
+                </article> -->
             </div>
         </section>
     </main>
