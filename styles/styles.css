@@ -100,6 +100,7 @@ ul.menu li:hover{
     
 }
 
+
 .cards{
     border: 1px;
     border-style: dashed;
@@ -211,5 +212,14 @@ footer{
 .cardImg{
     padding: 10px;
     border-radius: 15px;
+}
+@media only screen and (max-width: 560px){
+    #contaner_activities{        
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }    
+        
+    
 }
 /*fin estilos cards atividades*/
