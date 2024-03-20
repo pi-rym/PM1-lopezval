@@ -13,5 +13,9 @@
   "dependencies": {
     "jasmine": "^5.1.0",
     "live-server": "^1.2.2"
+  },
+  "devDependencies": {
+    "jasmine-browser-runner": "^2.3.0",
+    "jasmine-core": "^5.1.2"
   }
 }

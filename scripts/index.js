@@ -118,6 +118,10 @@ if(!tituloValue || !descripcionValue || !urlimgValue){
 myRepo.createActivity(tituloValue, descripcionValue, urlimgValue);
 //Invocar la función transformToActivities() para “refrescar” el contenedor de actividades.
 transformToActivities();
+//vaciar campos de texto para dejarlos dlistos para la siguiete actividad
+document.getElementById("titulo").value = "";
+document.getElementById("descripcion").value = "";
+document.getElementById("urlimg").value = "";
 }
 //Seleccionar el botón que disparará el evento de agregar actividad.
 const button = document.getElementById("botonActividad");
